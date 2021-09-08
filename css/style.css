@@ -1,0 +1,91 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box; 
+
+    text-decoration: none;
+}
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header_items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.header-menu ul{
+    display: flex;
+    list-style-type: none;
+}
+.header-menu li {
+    margin:0px 50px;
+}
+.header_logo{
+    position: relative;
+}
+.header_logo::before {
+content: "O";
+position: absolute;
+left:-35px;
+top:50%;
+font-size: 42px;
+transform: translateY(-50%);
+}
+.sign a {
+    border: 1px solid white;
+    padding:5px 25px;
+}
+.header_items a{
+    color:white;
+}
+.header-menu li a:hover,.sign a:hover {
+    color: black;
+}
+header   {
+   
+    height:750px;
+    background: linear-gradient(135deg, #1ce9be 50%, #0eb5cc);
+    
+}
+header img {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    opacity: 0.2;
+}
+.header-menu ,.sign{
+    transform: translateY(25%);
+}
+.banner-text{
+    width: 600px;
+    font-size: 18px;
+}
+.banner {
+    position: absolute;
+    top:50%;
+    transform: translateY(-100%);
+}
+.banner-btn-block {
+    display: flex;
+    
+}
+.banner .btn {
+    border:1px solid transparent;
+    padding:10px 25px;
+    border-radius: 3px;
+    margin:15px 20px;
+}
+.banner-btn-1 {
+    background:#061e37;
+}
+.banner-btn-2 {
+    background:white;
+}
